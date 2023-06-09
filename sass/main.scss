@@ -302,4 +302,103 @@ h1.company-name {
 	}
 }
 
+// PLANS
+.plans {
+	padding: 6em 2em;
+	background-color: utilities.$darker;
+
+	&__box {
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: utilities.$dark;
+		transition: background-color 0.3s, border 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: utilities.$darker;
+			border: 1px solid utilities.$gold;
+		}
+	}
+
+	&__item {
+		margin: 1em 0;
+	}
+
+	&__item-icon {
+		width: 50px;
+	}
+
+	&__item-name {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: utilities.$gold;
+	}
+}
+
+// NEWSLETTER
+.newsletter {
+	padding: 8em 2em;
+	background-color: utilities.$red;
+	text-align: center;
+
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+
+	&__form {
+		&-input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: utilities.$white;
+			border: 1px solid transparent;
+		}
+
+		&-btn {
+			padding: 1em;
+			border: 1px solid utilities.$gold;
+			background: none;
+			color: utilities.$gold;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s color 0.3s;
+
+			&:hover {
+				color: utilities.$red;
+				background-color: utilities.$gold;
+			}
+		}
+	}
+}
+
+// GALLERY
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&__img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
+}
+
+// FOOTER
+.footer {
+	padding: 3em 1em;
+	border-top: 1px solid utilities.$darker;
+	text-align: center;
+}
+
 @import './sizes';
